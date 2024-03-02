@@ -1,0 +1,20 @@
+/* Style for range input */
+input[type=range] {
+    -webkit-appearance: none; /* Remove default styles */
+    width: 50%; /* Adjust width as needed */
+    height: 5px; /* Adjust height as needed */
+    background-color: #97b3f5; /* Background color of the track */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+}
+
+/* Style for thumb */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styles */
+    appearance: none;
+    width: 20px; /* Adjust width of thumb */
+    height: 20px; /* Adjust height of thumb */
+    background-color: #008CBA; /* Color of thumb */
+    border-radius: 50%; /* Round shape */
+    cursor: pointer; /* Cursor style */
+}

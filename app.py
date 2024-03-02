@@ -17,6 +17,7 @@ def Summarize():
         data=req.form["data"]
 
         maxL=int(req.form["maxL"])
+        # maxL= len(data.split())
         minL=maxL//4
         def query(payload):
             response = requests.post(API_URL, headers=headers, json=payload)

@@ -16,18 +16,22 @@
     <header>
         <!-- <img src="/static/images/SynopserLogo.png" alt="Logo"
             class="object-contain w-16 self-center md:self-left md:w-30"> -->
-        <div class="self-center text-white">Summary Generator</div>
+        <!-- <div class="self-center text-white">Summary Generator</div> -->
+        <h1>Summary Generator</h1>
     </header>
+    <div class="instruction-line">
+        Please input the text you want to Summarize, select the desired length, and click the "Submit" button to proceed.</div> 
+	<div> 
 
     <section class="flex">
         <div class="w-full">
             <form class="w-full" action="{{url_for('Summarize')}}" method="post">
                 <textarea class="w-11/12 md:h-3/4 m-2 p-2 border-black rounded-lg border self-center justify-center"
-                    name="data" id="data" cols="30" rows="10" placeholder="Enter your Data"
+                    name="data" id="data" cols="30" rows="10" placeholder="Enter your text"
                     required="required"></textarea>
-                <div class="flex self-center">
-                    <h3>Summary Length</h3>
-                    <input type="input" class="m-2" min="20" max="1000" name="maxL">
+                <div class="summary-length">
+                    <h3>Summary Length:</h3>
+                    <input type="range" class="input-length" min="20" max="1000" name="maxL">
                 </div>
                 <div class="flex self-center">
                     <button class="m-1 bg-green-500 hover:bg-blue-700 text-white font-semi-bold py-2 px-4 rounded-lg"
@@ -51,11 +55,11 @@
     <script>
         function myFunction() {
             /* Get the text field */
-            var copyText = document.getElementById("myInput");
+            var copyText = document.getElementById("result");
 
             /* Select the text field */
             copyText.select();
-            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            copyText.setSelectionRange(0, 99999);
 
             /* Copy the text inside the text field */
             navigator.clipboard.writeText(copyText.value);
