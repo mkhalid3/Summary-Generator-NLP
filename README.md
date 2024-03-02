@@ -1,1 +1,1 @@
-## Summary Generator usung NLP
+## Summary Generator using NLP

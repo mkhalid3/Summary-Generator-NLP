@@ -1,0 +1,94 @@
+/* Style for header */
+header {
+    background-color: #3b7fe7;
+    height: 70px; /* Adjust height as needed */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    /* z-index: 999; Ensure header appears on top */
+    margin-top: 0px;
+}
+
+/* Style for logo */
+/* header img {
+    width: 80px; /* Adjust size as needed */
+    /* margin-right: 10px; Adjust spacing  */
+/* } */
+
+/* Style for header text */
+header div {
+    color: white;
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+/* Style for section */
+section {
+    margin-top: 20px; /* Adjust margin as needed */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Style for form container */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style for textarea */
+textarea {
+    width: 800px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+
+}
+
+/* Style for range input */
+input[type=range] {
+    width: 80%;
+    margin: 10px;
+}
+
+/* Style for buttons */
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for result textarea */
+textarea[name=result] {
+    background-color: #EDFFD2;
+    border: 2px solid #008000;
+    width: 800px;
+    height: 300px
+}
+
+/* Style for copy button */
+button.copy {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Hover effect for copy button */
+button.copy:hover {
+    background-color: #005266;
+}
+
+.result-sec {
+
+}
